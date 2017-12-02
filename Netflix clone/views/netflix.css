@@ -1,0 +1,258 @@
+*{
+	box-sizing: border-box;
+}
+#header{
+	background: black;
+	color: white;
+	overflow: auto;
+	padding-left: 25px;
+	padding-right: 25px;
+}
+#header a{
+	font-family: helvetica;
+	text-decoration: none;
+
+}
+
+#header a:hover{
+	color: red;
+}
+
+a{
+	text-decoration: none;
+}
+
+.logo{
+
+	float: left;
+	display: inline-block;
+	margin-right: 25px;
+	padding: 20px;
+}
+
+.leftmenu{
+	float: left;
+	display: inline-block;
+	
+}
+
+.leftmenu ul{
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.leftmenu  ul li{
+	display: inline-block;
+	padding: 20px;
+}
+
+.leftmenu  ul li a{
+	color: white;
+}
+
+.leftmenu  ul li a.dropdown{
+	color: red;
+}
+
+.rightmenu{
+	float: right;
+	display: inline-block;
+	color: black;
+	
+}
+
+.rightmenu ul{
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.rightmenu  ul li{
+	display: inline-block;
+	padding: 20px;
+}
+
+.rightmenu  ul li a{
+	color: white;
+}
+
+#largeImage{
+	padding: 200px 25px;
+  background:
+   -webkit-linear-gradient(90deg, rgba(231, 31, 17, .4)1%,#000000 100%),
+   url("http://buytheway.ascjclass.org/wp-content/uploads/sites/21/2017/03/get-out-mainstage-v2-reduced-58daa3d64781d-1.png") 
+  no-repeat left center ; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.description-box{
+	width: 50%;
+}
+
+.description-box h1{
+	font-family: serif;
+	font-weight: 700;
+	font-size: 60px;
+	margin: 0;
+	color: white;
+}
+
+.description-box h3{
+	font-family: helvetica;
+	font-weight: 400;
+	font-size: 25px;
+	margin: 0 0 25px 0;
+	color: white;
+}
+
+.description-box h4{
+	font-family: helvetica;
+	font-weight: 300;
+	margin: 0px;
+	color: white;
+}
+
+.description-box p{
+	margin-top: 25px !important;
+	font-family: helvetica;
+	font-weight: 400;
+	font-size: 18px;
+	margin: 0 0 25px 0;
+	color: white;
+}
+
+.button1{
+	font-family: arial;
+	display: inline-block;
+	padding: 12px 20px;
+	background: red;
+	color: white;
+	cursor: pointer;
+}
+
+.button2{
+	font-family: arial;
+	font-size: 10px;
+	display: inline-block;
+	padding: 10px 20px;
+	border: 2px solid #000;
+	color: white;
+	cursor: pointer;
+}
+
+.button1:hover{
+	background: rgba(0,0,0,.6);
+}
+
+.button2:hover{
+	background: rgba(0,0,0,.6);
+	border: 2px solid rgba(0,0,0,.6);
+}
+
+#videoSection{
+	width: 100%;
+	background: black
+}
+
+.row{
+	font-size: 0;
+	width: 100%;
+}
+
+.videoBoxes{
+	display: inline-block;
+	background: red;
+	width: 300px;
+	height:150px;
+	font-size: 16px;
+	margin: 2.5%;
+	padding: 15px;
+}
+.videoBoxes h4{
+	margin:0;
+	color: white;
+}
+
+.video1{
+	background: -webkit-linear-gradient(90deg, rgba(231, 31, 17, 0)1%,#000000 100%),
+   url("https://i.pinimg.com/736x/35/5d/65/355d65da2e1dc28b3399951765bc5fb1--pacific-rim-kaiju-pacific-rim-jaeger.jpg") 
+  no-repeat left center ; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+}
+
+.video2{
+	background: -webkit-linear-gradient(90deg, rgba(231, 31, 17, 0 )1%,#000000 100%),
+   url("https://i.pinimg.com/736x/ec/bc/0e/ecbc0e5cd54c3a7f444c8568231ab9b6--joseph-gordon-levitt-bruce-willis.jpg") 
+  no-repeat left center ; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+}
+
+.video3{
+	background: -webkit-linear-gradient(90deg, rgba(231, 31, 17, 0)1%,#000000 100%),
+   url("https://ae01.alicdn.com/kf/HTB1F8GrHVXXXXX6XpXXq6xXFXXXI/Free-shipping-font-b-fight-b-font-font-b-club-b-font-font-b-brad-b.jpg") 
+  no-repeat left center ; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+
+}
+
+.video4{
+	background: -webkit-linear-gradient(90deg, rgba(231, 31, 17, 0)1%,#000000 100%),
+   url("http://www.nbparks.org/wp-content/uploads/2017/04/rogue_one_horizontal-image-1000x563.jpg") 
+  no-repeat left center ; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+
+}
+
+.video5{
+	background: -webkit-linear-gradient(90deg, rgba(231, 31, 17, 0)1%,#000000 100%),
+   url("https://deadicatedfans.com/wp-content/uploads/2017/05/Logan-A3-Layered-Landscape-Launch.jpg") 
+  no-repeat left center ; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+
+}
+
+@media only screen and (max-width: 600px) {
+	.videoBoxes{
+		width: 95%;
+		margin: 2.5%;
+	}
+	.videoBoxes h4{
+		font-family: helvetica;
+		font-weight: 100;
+		font-size: 40px;
+	}
+ 
+}
+
+.resize {
+    width: 150px;
+    height: auto;
+}
+
+.resize {
+    width: 75px;
+    height: auto;
+}

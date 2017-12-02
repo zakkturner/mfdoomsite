@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Zak Turner Web Developer Portfolio</title>
+	<link rel="stylesheet" type="text/css" href="views/reset.css">
+	<link rel="stylesheet" type="text/css" href="views/main.css">
+</head>
+<body>
+	<header>
+	<div id="logo">
+		LOGO
+	</div>	
+	<nav id="top-nav">
+		<a href="about.html">About</a>
+		<a href="work.html">Work</a>
+		<a href="contact.html">Contact</a>
+
+	</nav>	
+		
+	</header>
+
+	<div class="jumbo">
+		<h1>Welcome to My Portfolio</h1>
+	</div>
+	<div class="work">
+		<div class="box" style="  background: url('https://applause-prodmktg.s3.amazonaws.com/2017/05/16/03/44/03/79d7ce79-30d0-418c-9ea8-786b5f71691e/Web-Design-Trends-2017.png') no-repeat center center; 
+  -webkit-background-size: contain;
+  background-size: cover ;">
+
+	  		<div class="hoverBox">
+	  			<h3>Project 1</h3>
+	  			<h5>Web Design</h5>
+	  		</div>
+
+		</div>
+		<div class="box" style="  background: url(https://image.freepik.com/free-photo/web-design-concept-with-drawings_1134-77.jpg) no-repeat center center; 
+  -webkit-background-size: contain;
+  background-size: cover ;">
+  			<div class="hoverBox">
+	  			<h3>Project 2</h3>
+	  			<h5>Web Design</h5>
+	  		</div>
+
+
+		</div>
+		<div class="box" style="  background: url(https://webdesignnorthernkentucky.com/wp-content/uploads/2017/06/Importance-of-having-a-website-for-your-business.jpeg) no-repeat center center; 
+  -webkit-background-size: contain;
+  background-size: cover ;">
+  			<div class="hoverBox">
+	  			<h3>Project 3</h3>
+	  			<h5>Web Design</h5>
+	  		</div>
+
+
+		</div>
+		<div class="box" style="  background: url(https://luciddms.com/wp-content/uploads/2017/03/web-design.jpg) no-repeat center center; 
+  -webkit-background-size: contain;
+  background-size: cover ;">
+  			<div class="hoverBox">
+	  			<h3>Project 4</h3>
+	  			<h5>Web Design</h5>
+	  		</div>
+
+
+		</div>
+		<div class="box" style="  background: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2015/06/webdesign.jpg) no-repeat center center; 
+  -webkit-background-size: contain;
+  background-size: cover ;">
+  			<div class="hoverBox">
+	  			<h3>Project 5</h3>
+	  			<h5>Web Design</h5>
+	  		</div>
+
+
+
+		</div>
+		<div class="box" style="  background: url(https://netdna.webdesignerdepot.com/uploads/2014/12/featured34.jpg) no-repeat center center; 
+  -webkit-background-size: contain;
+  background-size: cover ;">
+  			<div class="hoverBox">
+	  			<h3>Project 6</h3>
+	  			<h5>Web Design</h5>
+	  		</div>
+
+
+
+		</div>
+	</div>
+
+<div class="modal-container">
+<div class="modal">
+	<img src="https://cdn.elegantthemes.com/blog/wp-content/uploads/2016/02/web-design-tools-to-familiarize-yourself-with.png">
+</div>	
+
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+	$(document).ready(function () {
+		// $("body").css("background","#fff");
+
+		$('.box').click(function() {
+			$('.modal-container').addClass('active');
+		});
+
+		$('.modal').click(function() {
+			$('.modal-container').removeClass('active');
+		});
+	});
+		
+</script>
+</body>
+</html>

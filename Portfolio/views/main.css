@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css?family=Cabin+Sketch');
+
+body{
+	background: #1A1F2B;
+}
+
+header{
+	padding: 20px 15px;
+}
+
+#logo{
+	text-align: center;
+	width: 60px;
+	height: 60px;
+	background-color: #30395c;
+	display: inline-block;
+}
+
+#top-nav{
+
+	float: right;
+	display: inline-block;
+}
+
+#top-nav a{
+	display: inline-block;
+	color: #fff;
+	font-family: sans-serif;
+	text-decoration: none;
+	padding: 25px 15px;
+}
+
+#top-nav a:hover{
+	color: #85a5cc;
+	text-decoration: none;
+	padding: 0 15px;
+}
+
+.jumbo{
+	padding: 200px 0;
+}
+
+.jumbo h1{
+	text-align: center;
+	font-family: 'Cabin Sketch', cursive;
+	color: #fff;
+	font-size: 50px;
+	font-weight: 300;
+}
+
+.work{
+	padding: 60px 100px;
+	text-align: center;
+}
+
+.work .box{
+	display: inline-block;
+	background: #fff;
+	width: 250px;
+	height: 250px;
+	margin: 20px;
+	overflow: hidden;
+	cursor: pointer;
+
+}
+
+
+.work .box .hoverBox {
+	background: rgba(48, 57, 92, 0.9);
+	position: relative;
+	bottom: -100%;
+	height: 100%;
+	position: 100%;
+	transition: all .5s ease;
+	padding: 35px 15px;
+	text-align: left;
+	opacity: 0;
+}
+
+
+.work .box:hover .hoverBox{
+	opacity: 1;
+	bottom: 0;
+
+}
+
+.work .box .hoverBox h3{
+	color: white;
+	font-size: 24px;
+	font-weight: bold;
+	margin-bottom: 15px; 
+}
+
+.work .box .hoverBox h5{
+	color: white;
+	font-size: 18px;
+}
+
+.modal-container{
+	display: none;
+	box-sizing: border-box;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0, 0.7);
+}
+
+.modal-container.active{
+	display: block;
+}
+
+.modal{
+	box-sizing: border-box;
+	background: #fff;
+	margin: 100px auto;
+	width: 500px;
+	padding: 15px;
+}
+
+.modal img{
+	width: 100%;
+}
