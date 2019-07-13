@@ -1,0 +1,352 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700');
+@import "reset";
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+
+
+}
+
+header {
+  position: absolute;
+  z-index: 3;
+  padding: 15px;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+
+  .logo {
+    width: 100px;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  nav {
+    a {
+      align-self: center;
+      color: #F58522;
+      text-decoration: none;
+      font-weight: 300px;
+      padding: 0 10px;
+      font-size: 1.2rem;
+
+    }
+  }
+}
+
+#top-section {
+  position: relative;
+  height: 100vh;
+
+  .blurred {
+    background-image: linear-gradient(45deg, rgba(0, 107, 184, 1) 0%, rgba(0, 107, 184, 0.52) 48%, rgba(245, 133, 34, 0.3) 70%, rgba(245, 133, 34, 0.06) 93%, rgba(245, 133, 34, 0.01) 98%, rgba(185, 159, 133, 0) 99%, rgba(125, 185, 232, 0) 100%), url(/img/top.jpg);
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    filter: blur(25px) saturate(100%);
+    position: absolute;
+    z-index: 1;
+  }
+
+  .floating-img {
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+  }
+
+  .doom-img {
+    width: 30%;
+
+    img {
+      width: 100%;
+      filter: contrast(150%);
+    }
+  }
+}
+
+.music-player{
+  width: 100%;
+ position: fixed;
+ bottom: 0;
+ z-index: 10;
+ text-align: center;
+ left: 100px;
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+#bio {
+  display: flex;
+  padding: 50px;
+  background: white;
+  padding: 100px 0;
+
+  .container {
+    display: flex;
+  }
+
+  p {
+    width: 75%;
+    line-height: 1.8;
+    font-size: 1rem;
+    color: black;
+    padding: 0 50px;
+  }
+
+  .logo-centered {
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 50px;
+  }
+}
+
+#media {
+  padding: 100px 0;
+  background-color: rgba(0, 107, 184, 0.7) !important;
+  background-image: url('/img/mask.jpg');
+  background-blend-mode: color;
+  background-size: cover;
+
+  .title {
+    background: black;
+    font-size: 1.1rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    color: white;
+  }
+
+  .videos {
+
+    padding: 80px 50px 0;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-gap: 50px;
+
+    .video {
+      border-radius: 4px;
+      overflow: hidden;
+      height: 300px;
+      -webkit-box-shadow: 0px 13px 29px 17px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 13px 29px 17px rgba(0,0,0,0.75);
+box-shadow: 0px 13px 29px 17px rgba(0,0,0,0.75);
+
+      iframe {
+        height: 100%;
+      }
+    }
+  }
+}
+
+#music{
+  padding: 80px 0;
+  position: relative;
+  
+
+  .blurred {
+    background-image: linear-gradient(45deg, rgba(245, 132, 38, 1) 0%, rgba(245, 132, 38, 0.52) 48%, rgba(245, 133, 34, 0.3) 70%, rgba(245, 133, 34, 0.06) 93%, rgba(245, 133, 34, 0.01) 98%, rgba(185, 159, 133, 0) 99%, rgba(125, 185, 232, 0) 100%), url(/img/czar.jpg);
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    filter: blur(25px) saturate(100%);
+    position: absolute;
+    z-index: 1;
+  }
+  .container{
+    display: flex;
+    padding: 0 50px;
+    align-items: center;
+    position: relative;
+    z-index: 3;
+  }
+  .info{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .title{
+      font-size: 3rem;
+      font-weight: 700;
+      text-align: center;
+      margin-bottom: 15px;
+    }
+    .sub-title{
+      font-size: 1.7rem;
+      font-weight: 500;
+      text-align: center;
+      text-transform: uppercase;
+      margin-bottom: 100px;
+    }
+    .singles{
+      width: 400px;
+      margin-bottom: 80px;
+      display: grid;
+      grid-template-columns: 50% 50%;
+      li{
+        font-size: 1.5rem;
+        font-weight: 300;
+        text-align: center;
+        margin-bottom: 20px
+      }
+    }
+    .logos{
+      display: grid;
+      grid-template-columns: repeat(3,1fr);
+      grid-gap: 20px;
+    }
+  }
+  .album-cover{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img{
+      width: 75%;
+    }
+  }
+
+}
+
+#tour{
+  background: black;
+  position: relative;
+  z-index: 4;
+  .top-img{
+    background-image: url("/img/live.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    filter: contrast(120%);
+    height: 400px;
+
+  }
+
+  .tourdates{
+    background: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 80px;
+    
+    .title{
+      color: white;
+      text-align: center;
+      text-transform: uppercase;
+      font-size: 1.8rem;
+      margin: 0 0 80px;
+    }
+    .dates{
+      display: grid;
+      grid-template-columns: repeat(3,1fr);
+      grid-gap: 20px;
+      // max-width: 800px;
+      li{
+        color: white;
+        font-size: 1.3rem;
+        
+        span{
+          padding: 0 10px;
+        }
+        .city{
+          
+          font-weight: 700;
+
+        }
+        .location{
+          font-size: 1rem;
+          font-weight: 300;
+        }
+        .date{
+          font-weight: 500;
+          color: #F58426;
+        }
+      }
+    }
+  }
+
+}
+
+#topBtn{
+  position:fixed;
+  bottom: 40px;
+  right: 40px;
+  font-size: 22px;
+  width: 50px;
+  height: 50px;
+  background: #F58522;
+  border-radius: 10px;
+  color: white;
+  border: none;
+  cursor: pointer;
+  display: none;
+z-index: 11;
+}
+
+footer{
+  background: #1b1b1b;
+  position: relative;
+  z-index: 4;
+  padding: 25px;
+  text-align: center;
+
+  .ft-container{
+    width: 20%;
+    margin: 0 auto;
+    padding: 25px;
+    position: relative;
+    left: -25px;
+    display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 0;
+    h4{
+      position: relative;
+      color: white;
+      top: 25px;
+      left: 30px;
+    }
+    img{
+    max-width: 150px;
+    
+  }
+}
+}
+
+@media all and (max-width: 320px) and (min-width:0px) {
+  .container{
+    width: 100%;
+  }
+
+  .bio-sect p {
+    width: 100%;
+    padding: 0 100px;
+    text-align: center;
+  }
+  .logo-centered img {
+    width: 100%;
+    padding: 100px;
+    text-align: center;
+  }
+
+}
