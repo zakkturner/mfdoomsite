@@ -1,3 +1,5 @@
+'use strict';
+
 const express = require('express'),
         serveStatic = require('serve-static'),
         path = require('path');
